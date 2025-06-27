@@ -11,9 +11,7 @@ function About() {
     return (
 
         <main className='about'>
-            {
-                // Récupération des composants Banner et Collapse
-            }
+            {/* Récupération des composants Banner et Collapse */}
             < Banner page="about" />
             <section className='about__collapse'>
             < Collapse 

@@ -1,7 +1,7 @@
-// On importe React pour pouvoir utiliser JSX et les hooks
+// Importation React pour pouvoir utiliser JSX et les hooks
 import React, { useState } from 'react';
 
-// On importe le fichier de styles SCSS spécifique au composant Collapse
+// Importe le fichier de styles SCSS spécifique au composant Collapse
 import './_Collapse.scss';
 
 // Déclaration du composant Collapse, qui reçoit deux props : title (le titre du panneau) et content (le texte à afficher)
