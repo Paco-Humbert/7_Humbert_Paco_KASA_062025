@@ -1,0 +1,1 @@
+<Banner page="home" content="Chez vous, partout et ailleurs" />
