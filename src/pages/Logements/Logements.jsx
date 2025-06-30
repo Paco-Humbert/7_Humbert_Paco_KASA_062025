@@ -11,5 +11,5 @@ function Logement() {
     )
 }
 
-// Exportation du composant
+
 export default Logement

@@ -1,13 +1,6 @@
-// Importation de React pour pouvoir écrire du JSX
 import React from 'react';
-
-// Importation de NavLink pour gérer la navigation avec React Router
 import { NavLink } from 'react-router-dom';
-
-// Importation du logo de Kasa
 import Logo from '../../assets/LOGO.png';
-
-// Importation du style spécifique au header
 import './_Header.scss';
 
 // Déclaration du composant Header
@@ -48,5 +41,4 @@ function Header() {
   );
 }
 
-// Exportation du composant pour pouvoir l'utiliser ailleurs (ex: App.jsx)
 export default Header;

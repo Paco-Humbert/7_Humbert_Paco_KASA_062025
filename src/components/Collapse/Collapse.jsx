@@ -1,7 +1,6 @@
 // Importation React pour pouvoir utiliser JSX et les hooks
 import React, { useState } from 'react';
 
-// Importe le fichier de styles SCSS spécifique au composant Collapse
 import './_Collapse.scss';
 
 // Déclaration du composant Collapse, qui reçoit deux props : title (le titre du panneau) et content (le texte à afficher)
@@ -14,7 +13,6 @@ function Collapse({ title, content }) {
     setIsOpen(!isOpen);
   };
 
-  // Le rendu JSX du composant
   return (
     <div className="collapse">
       {/* En-tête cliquable avec le titre et une flèche */}
@@ -36,5 +34,5 @@ function Collapse({ title, content }) {
   );
 }
 
-// On exporte le composant pour pouvoir l'utiliser dans d'autres fichiers (comme About.jsx)
+
 export default Collapse;

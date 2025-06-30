@@ -8,5 +8,5 @@ function Home() {
     )
 }
 
-// Exportation du composant Home
+
 export default Home

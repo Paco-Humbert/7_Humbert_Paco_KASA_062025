@@ -1,13 +1,6 @@
-// Importation React pour pouvoir utiliser JSX
 import React from 'react'
-
-// Importation ReactDOM pour pouvoir injecter l'application dans le DOM
 import ReactDOM from 'react-dom/client'
-
-// Importe le composant principal de l'application
 import App from './App.jsx'
-
-// Importe les styles globaux
 import './index.scss'
 
 // Importe BrowserRouter pour gérer la navigation via React Router

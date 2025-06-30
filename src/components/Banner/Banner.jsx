@@ -1,13 +1,11 @@
 import React from 'react'
 
-// importation image : pour accueil et "à propos"
 import BannerImgHome from '../../assets/home.png'
 import BannerImgAbout from '../../assets/about.png'
 
-// importation du fichier de style SCSS spécifique à ce composant
 import './_Banner.scss'
 
-// Déclaration du composant Banner, avec deux props : page (ex: "home", "about") et content (le texte)
+// Déclaration du composant Banner, avec deux props : page et content (le texte)
 function Banner({ page, content }) {
   /*
     On choisit dynamiquement l’image de fond en fonction de la page.
@@ -33,5 +31,5 @@ function Banner({ page, content }) {
   )
 }
 
-// On exporte le composant pour pouvoir l’utiliser dans Home.jsx ou About.jsx
+
 export default Banner

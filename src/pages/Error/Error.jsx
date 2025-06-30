@@ -28,5 +28,5 @@ function Error() {
   );
 }
 
-// Exportation du composant pour pouvoir l'utiliser dans les routes
+
 export default Error;

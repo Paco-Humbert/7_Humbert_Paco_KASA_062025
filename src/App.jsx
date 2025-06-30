@@ -1,17 +1,15 @@
-// Importation Routes et Route depuis react-router-dom pour gérer la navigation
 import { Routes, Route } from 'react-router-dom'
 
 // On importe les pages principales de l’application
-import Home from './pages/Home/Home.jsx'            // Page d’accueil
-import About from './pages/About/About.jsx'         // Page "À propos"
-import Logement from './pages/Logements/Logements.jsx' // Page de détail d’un logement
-import Error from './pages/Error/Error.jsx'         // Page d’erreur 404
+import Home from './pages/Home/Home.jsx'            
+import About from './pages/About/About.jsx'         
+import Logement from './pages/Logements/Logements.jsx' 
+import Error from './pages/Error/Error.jsx'         
 
 // Importation des composants affichés sur toutes les pages
-import Header from './components/Header/Header'     // En-tête du site
-import Footer from './components/Footer/Footer'     // Pied de page
+import Header from './components/Header/Header'     
+import Footer from './components/Footer/Footer'    
 
-// Définition du composant principal App
 function App() {
   return (
     <>
@@ -40,5 +38,4 @@ function App() {
   )
 }
 
-// Exporte App pour l’utiliser dans index.jsx
 export default App
