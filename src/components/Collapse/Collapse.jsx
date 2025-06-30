@@ -3,36 +3,31 @@ import React, { useState } from 'react';
 
 import './_Collapse.scss';
 
-// Déclaration du composant Collapse, qui reçoit deux props : title (le titre du panneau) et content (le texte à afficher)
+import arrowback from '../../assets/arrow_back.png'
+
+// Création de la fonction composant Collapse en utilisant des props
 function Collapse({ title, content }) {
-  // Hook d'état pour suivre si le panneau est ouvert ou fermé (false = fermé par défaut)
-  const [isOpen, setIsOpen] = useState(false);
 
-  // Fonction qui inverse l'état : si c'est ouvert, on ferme, et vice-versa
-  const toggleCollapse = () => {
-    setIsOpen(!isOpen);
-  };
+    // Indication que la Collapse est fermée de base avec le state local
+    const [isOpen, setIsOpen] = useState(false)
 
-  return (
-    <div className="collapse">
-      {/* En-tête cliquable avec le titre et une flèche */}
-      <div className="collapse__header" onClick={toggleCollapse}>
-        {/* Le titre du panneau (passé via les props) */}
-        <h3 className="collapse__title">{title}</h3>
-
-        {/* Une flèche qui pivote selon que le panneau est ouvert ou fermé */}
-        <span className={`collapse__arrow ${isOpen ? 'open' : ''}`}>⌄</span>
-      </div>
-
-      {/* Le contenu n'est affiché que si le panneau est ouvert */}
-      {isOpen && (
-        <div className="collapse__content">
-          <p>{content}</p>
+    return (
+        
+        <div className={`collapse ${isOpen ? "open" : ""}`}>
+            <div className="collapse__header">
+                <h2>{title}</h2>
+                <button className="collapse__header-button" onClick={() => setIsOpen(!isOpen)}>
+                <img src={arrowback} alt="Chevron" className={`chevron-up ${isOpen ? "open" : ""}`}/>
+                </button>
+            </div>
+            <div className={`collapse__content ${isOpen ? "open" : ""}`}>
+                {content}
+            </div>
         </div>
-      )}
-    </div>
-  );
+        
+    )
 }
+
 
 
 export default Collapse;

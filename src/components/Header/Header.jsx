@@ -14,7 +14,7 @@ function Header() {
         <img
           src={Logo}
           alt="Logo de Kasa"
-          className="header__image" // SCSS : gère la taille et l’adaptation responsive
+          className="header__image"
         />
       </NavLink>
 

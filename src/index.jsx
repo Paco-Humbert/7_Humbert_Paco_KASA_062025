@@ -1,8 +1,11 @@
-import React from 'react'
-import ReactDOM from 'react-dom/client'
-import { BrowserRouter } from 'react-router-dom' // active React Router
-import App from './App'
-import './styles/index.scss' 
+// Importation des éléments dont on a besoin 
+import React from 'react';
+
+// Création des routes avec React Router
+import ReactDOM from 'react-dom/client';
+
+// Design
+import './styles/_Global.scss'
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
