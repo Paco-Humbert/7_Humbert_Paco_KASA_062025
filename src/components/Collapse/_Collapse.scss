@@ -17,7 +17,7 @@
         display: flex;
         align-items: center;
         justify-content: space-between;
-        width: 100%;
+        width: 1023px;
         padding: 10px 20px 10px 10px;
         background-color: $main-color;
         border-radius: 10px;
@@ -52,7 +52,7 @@
     }
 
     &__content {
-        width: 100%;
+        width: 1023px;
         padding: 20px;
         font-size: 18px;
         color: $main-color;

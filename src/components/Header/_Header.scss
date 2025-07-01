@@ -5,7 +5,7 @@
    display: flex;
    justify-content: space-between;
    margin: 30px auto;
-   width: 80%;
+   width: 1240px;
 
    @include mobile {
       width: 90%;
@@ -36,6 +36,7 @@
          font-size: 24px;
          color: black;
          font-weight: 500;
+         
 
          @include mobile {
          font-size: 12px;
