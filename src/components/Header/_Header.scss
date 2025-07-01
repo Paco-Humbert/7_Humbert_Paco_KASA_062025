@@ -15,12 +15,14 @@
                   }
          &__navbar {align-items: center;
                     display: flex;
+                    
                     gap: 50px;
                     @include mobile {align-items: right;
                                      gap: 20px;
                                     }
                     a {font-size: 24px;
-                    font-weight: 500;
+                       color: black;
+                       font-weight: 500;
                        @include mobile {font-size: 12px;
                                         line-height: 17px;
                                         text-transform: uppercase;
