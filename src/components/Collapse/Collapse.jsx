@@ -1,14 +1,12 @@
 // Importation React pour pouvoir utiliser JSX et les hooks
 import React, { useState } from 'react';
-
 import './_Collapse.scss';
-
 import arrowback from '../../assets/arrow_back.png'
 
 // Création de la fonction composant Collapse en utilisant des props
 function Collapse({ title, content }) {
 
-    // Hook indiquant que la Collapse est fermée de base avec le state local
+    // Hook indiquant que la Collapse est fermée de base avec le state d'état
     const [isOpen, setIsOpen] = useState(false)
 
     return (
