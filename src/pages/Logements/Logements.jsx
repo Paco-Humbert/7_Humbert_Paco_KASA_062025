@@ -37,7 +37,7 @@ function Logement() {
                     <div className='logementscard__container-host'>
                         <div className='host-id'>
                             <p>{location.host.name}</p>
-                            <img src={location.host.picture} alt="Portrait du propriétaire" />
+                            <img src={location.host.picture} alt="" />
                         </div>
                         < Rating />
                     </div>
