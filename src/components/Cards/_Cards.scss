@@ -1,0 +1,81 @@
+@import '../../styles/_Style.scss';
+@import '../../styles/_Breakpoints.scss';
+
+.logements {
+    background-color: $second-color;
+    border-radius: 25px;
+    margin: 50px auto;
+    padding: 10px 0;
+    width: 80%;
+
+    @include mobile {
+        background-color: white;
+        margin: 20px auto;
+        width: 90%;
+    }
+
+    &__list {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        justify-content: space-around;
+        gap: 50px;
+        padding: 50px;
+        width: 100%;
+
+        @include mobile {
+            grid-template-columns: repeat(1, 1fr);
+            padding: 0;
+        }
+
+        &-item {
+            position: relative;
+
+            &-card {
+                display: block;
+                width: 100%;
+                height: 340px;
+                border-radius: 10px;
+                color: $text-white;
+
+                @include tablet {
+                    height: 220px;
+                }
+
+                @include mobile {
+                    height: 255px;
+                }
+
+                .logements-cover {
+                    height: 340px;
+                    border-radius: 10px;
+
+                    @include tablet {
+                        height: 220px;
+                    }
+
+                    @include mobile {
+                        height: 255px;
+                    }
+                }
+
+                .logements-title {
+                    position: absolute;
+                    bottom: 15px;
+                    left: 15px;
+                    width: 90%;
+                    font-size: 18px;
+
+                    @include tablet {
+                        font-size: 14px;
+                    }
+
+                    @include mobile {
+                        font-size: 18px;
+                        line-height: 25px;
+                        width: 60%;
+                    }
+                }
+            }
+        }
+    }
+}
