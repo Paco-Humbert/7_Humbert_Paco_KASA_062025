@@ -1,14 +1,10 @@
-// Importation des éléments dont on a besoin 
 import React from 'react'
 // Importation des hooks
 import { useState } from 'react'
 import { useParams } from 'react-router-dom'
-// Importation des données des locations 
 import DataLogements from '../../datas/logements.json'
-// Importation des images
 import ArrowLeft from '../../assets/arrow_left.png'
 import ArrowRight from '../../assets/arrow_right.png'
-// Design
 import './_Carousel.scss'
 
 // Création d'une fonction composant Carousel
@@ -29,7 +25,7 @@ function Carousel() {
         setSlide(slide === location.pictures.length - 1 ? 0 : slide + 1)
     }
 
-    // S'il y a plus d'une image, on affiche les flèches de navigation et la numérotation
+    // Affiche les flèches de navigation et la numérotation
     if (location.pictures.length > 1) {
         return (
         
