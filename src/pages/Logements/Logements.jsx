@@ -1,11 +1,7 @@
 import React from 'react'
-// Importation des hooks
 import { useParams } from 'react-router-dom'
-// Importation des données des locations 
 import DataLogements from '../../datas/logements.json'
-// Importation de la page d'erreur pour la gestion des IDs inexistants
 import Error from '../../pages/Error/Error'
-// Importation des composants fonctions
 import Carousel from '../../components/Carousel/Carousel'
 import Collapse from '../../components/Collapse/Collapse'
 import Tag from '../../components/Tag/Tag'

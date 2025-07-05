@@ -1,5 +1,4 @@
 import React from 'react'
-// Importation des hooks
 import { useState } from 'react'
 import { useParams } from 'react-router-dom'
 import DataLogements from '../../datas/logements.json'
@@ -7,7 +6,6 @@ import ArrowLeft from '../../assets/arrow_left.png'
 import ArrowRight from '../../assets/arrow_right.png'
 import './_Carousel.scss'
 
-// Création d'une fonction composant Carousel
 function Carousel() {
     // Récupération de l'ID de la location avec le hook useParams de React Router
     const { id } = useParams()
