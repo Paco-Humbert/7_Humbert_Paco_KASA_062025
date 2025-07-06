@@ -1,0 +1,38 @@
+@import '../../styles/_Style.scss';
+@import '../../styles/Breakpoints.scss';
+
+.tags {
+    margin-top: 25px;
+    width: 100%;
+
+    @include mobile {
+        margin-bottom: 10px;
+        margin-top: 15px;
+        width: 90%;
+    }
+
+    &__container {
+        align-items: center;
+        display: flex;
+        gap: 20px;
+
+        @include mobile {
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+
+        &-item {
+            align-items: center;
+            background-color: $main-color;
+            border-radius: 10px;
+            font-size: 14px;
+            padding: 5px 30px;
+
+            @include mobile {
+                font-size: 10px;
+                line-height: 14px;
+                padding: 5px 10px;
+            }
+        }
+    }
+}
