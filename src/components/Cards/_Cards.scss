@@ -8,7 +8,6 @@
     padding: 10px 0;
     width: 80%;
     max-width: 1240px;
-
     @include mobile {
         background-color: white;
         margin: 20px auto;
@@ -19,7 +18,9 @@
         display: grid;
         grid-template-columns: repeat(3, 1fr);
         justify-content: space-around;
+        background-color: $second-color;
         gap: 50px;
+        padding: 50px;
         width: 100%;
 
         @include mobile {
