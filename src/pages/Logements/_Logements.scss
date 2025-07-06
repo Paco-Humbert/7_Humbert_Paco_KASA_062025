@@ -5,7 +5,7 @@
     display: flex;
     flex-direction: column;
     margin: 50px auto;
-    width: 80%;
+    max-width: 1240px;
 
     @include mobile {
         margin: 20px auto;
@@ -16,6 +16,7 @@
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         width: 100%;
+        box-sizing: border-box;
 
         @include mobile {
             grid-template-columns: repeat(1, 1fr);
@@ -91,12 +92,15 @@
 
     &__collapse {
         display: flex;
-        gap: 50px;
-        width: 100%;
+        box-sizing: content-box;
+        width: 582px;
+        gap: 10px;
 
         @include mobile {
             flex-direction: column;
             gap: 0;
         }
+
+        
     }
 }

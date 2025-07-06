@@ -29,7 +29,6 @@
 
       @include mobile {
          gap: 20px;
-         
       }
 
       a {
@@ -37,6 +36,12 @@
          color: black;
          font-weight: 500;
          
+         &:hover, 
+         :active, 
+         :focus {
+            text-decoration: underline;
+         }
+
 
          @include mobile {
          font-size: 12px;
