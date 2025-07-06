@@ -15,7 +15,7 @@ function Rating() {
     const rating = location.rating
     const maxRating = 5
 
-    // Boucle comptant le nombre d'étoiles de la location que l'on ajoute au tableau "stars" avec push
+    // Boucle comptant le nombre d'étoiles de la location que l'on ajoute au tableau avec push
     for (let i = 0 ; i < rating; i++) {
         stars.push(<img key={i} src={StarActive} alt="Etoile pleine" />)
     }
