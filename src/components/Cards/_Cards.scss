@@ -8,10 +8,11 @@
     padding: 10px 0;
     width: 80%;
     max-width: 1240px;
+
     @include mobile {
-        background-color: white;
+        background-color: $second-color;
         margin: 20px auto;
-        width: 90%;
+        width: 80%;
     }
 
     &__list {
@@ -26,6 +27,10 @@
         @include mobile {
             grid-template-columns: repeat(1, 1fr);
             padding: 0;
+        }
+
+        @include tablet {
+            grid-template-columns: repeat(2, 1fr);
         }
 
         &-item {
@@ -56,6 +61,7 @@
 
                     @include mobile {
                         height: 255px;
+                        width: 335px;
                     }
                 }
 

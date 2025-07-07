@@ -35,7 +35,7 @@
             }
 
             p {
-                color: $main-color;
+                color: $footer-color;
                 font-size: 18px;
 
                 @include mobile {
@@ -93,12 +93,14 @@
     &__collapse {
         display: flex;
         box-sizing: content-box;
-        width: 582px;
+        width: 450px;
         gap: 10px;
 
         @include mobile {
             flex-direction: column;
             gap: 0;
+            align-items: flex-start;
+            margin: 15px -45px;
         }
 
         

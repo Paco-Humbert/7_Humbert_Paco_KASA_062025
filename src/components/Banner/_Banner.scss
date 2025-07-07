@@ -9,9 +9,13 @@
     margin: 50px auto;
 
     @include mobile {
-        width: 90%;
+        max-width: 80%;
         margin: 30px auto;
         height: 100px;
+    }
+
+    @include tablet {
+                max-width: 80%;
     }
 
     &__image {
@@ -21,7 +25,8 @@
 
         @include mobile {
             height: 111px;
-            width: 335px;
+            width: 100%;
+            border-radius: 10px;
         }
     }
 
@@ -32,6 +37,12 @@
         background-color: rgba(0, 0, 0, 0.4); 
         z-index: 1;
         border-radius: 25px;
+
+        @include mobile {
+            height: 111px;
+            width: 100%;
+            border-radius: 10px;
+        }
     }
 
     &__content {

@@ -13,9 +13,12 @@ body {color: $text_white;
       width: 100%;
     } 
      
-.banner__image, .carousel__container-slide, .logements-cover {filter: brightness(0.70);
-                                                              object-fit: cover;
-                                                              width: 100%;
-                                                            }
+.banner__image, 
+.carousel__container-slide, 
+.logements-cover {
+object-fit: cover;
+width: 100%;
+}
+
 ul > li {list-style: none;}
 a {text-decoration: none;}
