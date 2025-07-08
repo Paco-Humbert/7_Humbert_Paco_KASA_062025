@@ -9,15 +9,12 @@ function Header() {
     // Élément principal du header avec la classe 'header'
     <header className="header">
 
-      {/* Logo cliquable qui redirige vers la page d'accueil */}
-      <NavLink to="/">
-        <img
-          src={Logo}
-          alt="Logo de Kasa"
-          className="header__image"
-        />
-      </NavLink>
-
+      <img
+        src={Logo}
+        alt="Logo de Kasa"
+        className="header__image"
+      />
+      
       {/* Barre de navigation avec les liens */}
       <nav className="header__navbar">
         {/* Lien vers la page d'accueil */}
@@ -33,7 +30,7 @@ function Header() {
           to="/about"
           className={({ isActive }) => (isActive ? 'active' : '')}
         >
-          A propos
+          A Propos
         </NavLink>
       </nav>
 

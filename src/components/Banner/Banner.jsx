@@ -13,7 +13,7 @@ function Banner({ page, content }) {
   const imageSrc = page === "home" ? BannerImgHome : BannerImgAbout
 
   return (
-    <div className="banner">
+    <div className="banner__image-wrapper">
       {/* Image de fond affichée dans la bannière */}
       <img
         src={imageSrc}

@@ -12,10 +12,6 @@
         width: 90%;
     }
 
-    .carousel__container {
-        // Ajoute ici les styles du carousel si besoin
-    }
-
     &__container {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
@@ -46,12 +42,6 @@
                     font-size: 14px;
                     line-height: 20px;
                 }
-            }
-        }
-
-        .tags {
-            &__container {
-                // À compléter si nécessaire
             }
         }
 

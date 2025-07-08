@@ -5,7 +5,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin: 40px auto;
+    margin: 20px auto;
     width: 583px;
     
     @include mobile {
@@ -27,7 +27,7 @@
             padding: 4px 6px;
             border-radius: 5px;
             width: 100%;
-            max-width: 767.99px;
+            max-width: 335px;
             align-items: center;
             
         }
@@ -74,7 +74,7 @@
         @include mobile {
         font-size: 12px;
         line-height: 17px;
-        width: 335px;
+        max-width: 335px;
         }
 
         &.open {
