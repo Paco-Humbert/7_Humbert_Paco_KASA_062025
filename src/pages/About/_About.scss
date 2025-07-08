@@ -4,13 +4,30 @@
     width: 100%;
 
     &__collapse {
-        @include mobile {
+        display: flex;
+        flex-direction: column;
+
+        .collapse {
             display: flex;
-            flex-direction: column;   
-            gap: 10px;
-            margin: 20px auto;
-            width: 100%;
+            flex-direction: column;
+
+            &__header {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+            }
+
+            &__content {
+                width: 100%;
+                padding: 20px;
+                background-color: #f6f6f6;
+                border-radius: 10px;
+                box-sizing: border-box;
+            }
+        }
+
+        @include mobile {
+            padding: 0 40px;
         }
     }
-
 }
