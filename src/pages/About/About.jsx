@@ -1,12 +1,8 @@
-// Importation des éléments dont on a besoin 
-import React from 'react'
 // Importation des composants fonctions
 import Banner from '../../components/Banner/Banner'
 import Collapse from '../../components/Collapse/Collapse'
-// Design
 import './_About.scss';
 
-// Création d'une fonction composant qui affiche la page About
 function About() {
     return (
 
@@ -14,6 +10,7 @@ function About() {
             {/* Récupération des composants Banner et Collapse */}
             < Banner page="about" />
             <section className='about__collapse'>
+                
             < Collapse 
                 title="Fiabilité"
                 content="Les annonces postées sur Kasa garantissent une fiabilité totale. Les photos sont conformes aux logements, 

@@ -94,7 +94,9 @@
         display: flex;
         box-sizing: content-box;
         width: 450px;
-        gap: 10px;
+        gap: 450px;
+        justify-content: space-between;
+        margin-left: 200px;
 
         @include mobile {
             flex-direction: column;

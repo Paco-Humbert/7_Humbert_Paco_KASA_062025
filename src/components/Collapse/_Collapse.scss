@@ -4,8 +4,11 @@
 .collapse {
     display: flex;
     flex-direction: column;
+    
     align-items: center;
     margin: 40px -200px;
+    width: 582px;
+    
     
 
     @include mobile {
@@ -16,17 +19,19 @@
 
     &__header {
         display: flex;
-        align-items: center;
+        align-items: flex-start;
         justify-content: space-between;
-        width: 1023px;
+        width: 582px;
         padding: 10px 20px 10px 10px;
         background-color: $main-color;
         border-radius: 5px;
+        gap: 76px;
 
         @include mobile {
             padding: 4px 6px;
             border-radius: 5px;
             max-width: 80%;
+            align-items: center;
             
         }
 
@@ -55,7 +60,7 @@
     }
 
     &__content {
-        width: 1023px;
+        width: 582px;
         padding: 20px;
         font-size: 18px;
         color: $main-color;
@@ -66,6 +71,7 @@
         overflow: hidden;
         transition: max-height 0.2s ease-in-out, margin-top 0.2s ease-in-out;
         z-index: -1;
+        gap: 76px;
 
         @include mobile {
         font-size: 12px;

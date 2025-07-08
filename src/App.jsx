@@ -14,8 +14,7 @@ function App() {
   return (
     <>
       <Header />
-      {/* Définition des routes de l’application avec options "future" activées */}
-      <Routes future={{ v7_startTransition: true, v7_relativeSplatPath: true }}>
+      <Routes >
       <Route path="/" element={<Home />} />
       <Route path="/about" element={<About />} />
       <Route path="/logements/:id" element={<Logement />} />

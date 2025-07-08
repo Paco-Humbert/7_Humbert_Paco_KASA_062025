@@ -1,5 +1,3 @@
-import React from 'react'
-
 import BannerImgHome from '../../assets/home.png'
 import BannerImgAbout from '../../assets/about.png'
 
