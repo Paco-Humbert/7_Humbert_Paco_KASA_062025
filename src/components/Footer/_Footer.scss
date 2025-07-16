@@ -6,7 +6,6 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-
     width: 100%;
     max-width: 1440px;
     padding: 50px;
@@ -18,9 +17,8 @@
             height: 209px;
             padding: 80px;
             max-width: 100%;
-            font-size: 12px;
+            font-size: 0.75rem;
             line-height: 17px;
-            
             
         }
     &__image {
@@ -29,7 +27,16 @@
     }
 
     &__info {
-        font-size: 24px;
+        font-size: 1.5rem;
+        text-align: center;
+
+        @include mobile {
+            width: 122px;
+            font-size: 0.75rem;
+            align-items: center;
+            line-height: 17px;
+            max-width: 100%;
+        }
   }
 
     
