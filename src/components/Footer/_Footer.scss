@@ -1,5 +1,5 @@
-@import '../../styles/Style.scss';
-@import '../../styles/Breakpoints.scss';
+@use '../../styles/Style.scss' as *;
+@use '../../styles/Breakpoints' as *;
 
 .footer {
     display: flex;
@@ -13,6 +13,16 @@
     gap: 25px;
     background-color: $footer-color;
 
+
+    @include mobile {
+            height: 209px;
+            padding: 80px;
+            max-width: 100%;
+            font-size: 12px;
+            line-height: 17px;
+            
+            
+        }
     &__image {
         height: 39px;
         width: 122px;
@@ -20,17 +30,7 @@
 
     &__info {
         font-size: 24px;
-
-    @include mobile {
-        font-size: 12px;
-        line-height: 17px;
-        text-align: center;
-        width: 48%;
-    }
   }
 
-    @include mobile {
-        height: 250px;
-        padding: 80px;
-    }
+    
 }

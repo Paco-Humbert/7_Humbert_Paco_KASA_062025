@@ -1,5 +1,5 @@
-@import '../../styles/_Style.scss';
-@import '../../styles/Breakpoints.scss';
+@use '../../styles/Style.scss' as *;
+@use '../../styles/Breakpoints' as *;
 
 .errorpage {
     align-items: center;

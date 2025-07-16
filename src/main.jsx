@@ -9,8 +9,14 @@ import { BrowserRouter } from 'react-router-dom'
 // Création de la racine de l'application et la rend dans l'élément HTML avec l'id 'root'  ????
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
-    <BrowserRouter>
-      <App/>
+    <BrowserRouter
+      // Ajout car sinon affichage WARNING dans la console
+      future={{
+        v7_startTransition: true,
+        v7_relativeSplatPath: true
+      }}
+    >
+      <App />
     </BrowserRouter>
   </React.StrictMode>
 )

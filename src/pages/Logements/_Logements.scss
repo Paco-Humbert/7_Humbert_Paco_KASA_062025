@@ -1,5 +1,5 @@
-@import '../../styles/_Style.scss';
-@import '../../styles/Breakpoints.scss';
+@use '../../styles/Style.scss' as *;
+@use '../../styles/Breakpoints' as *;
 
 .logementscard {
     display: flex;
@@ -97,17 +97,18 @@
         @include mobile {
             display: flex;
             flex-direction: column;
-            gap: 20px;
+            gap: 5px;
         }
 
         .collapse {
-            display: flex;
-
+    
             &__header {
                 display: flex;
                 justify-content: space-between;
                 align-items: center;
                 width: 100%;
+                
+               
             }
 
             &__content {

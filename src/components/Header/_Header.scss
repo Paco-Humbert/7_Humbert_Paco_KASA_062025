@@ -1,5 +1,5 @@
-@import '../../styles/_Style.scss';
-@import '../../styles/_Breakpoints.scss';
+@use '../../styles/Style.scss' as *;
+@use '../../styles/Breakpoints' as *;
 
 .header {
    display: flex;
@@ -9,12 +9,14 @@
 
    @include mobile {
       max-width: 100%;
-      justify-content: space-around; 
-      max-width: 335px;
+      justify-content: space-between; 
+      align-items: center;
+      margin: 19px 30px;
    }
 
    @include tablet {
-      max-width: 80%;
+      max-width: 100%;
+      margin: 19px 40px;
    }
    &__image {
       align-items: center;
@@ -33,7 +35,7 @@
       gap: 50px;
 
       @include mobile {
-         gap: 15px;
+         gap: 24px;
       }
 
       a {

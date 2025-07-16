@@ -1,74 +1,13 @@
-@import '../../styles/Breakpoints.scss';
+@use '../../styles/Breakpoints' as *;
 
 .about {
-    width: 100%;
 
-    .banner {
-        max-width: 100%;
-
-        &__image-wrapper {
-            width: 100%;
-
-            @include mobile {
-                max-width: 335px;
-            }
-        }
-
-        &__image {
-            width: 100%;
-            height: 223px;
-            margin: 0;
-            border-radius: 25px;
-            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
-
-            @include mobile {
-                height: 111px;
-                border-radius: 10px;
-                max-width: 335px;
-            
-            }
-        }
-
-        &::after {
-            border-radius: 10px;
-            
-
-            @include mobile {
-                padding: 0 20px;
-                max-width: 335px;
-            }
-        }
-    }
-
-    &__collapse {
-        display: flex;
-        flex-direction: column;
-
-        .collapse {
-            display: flex;
-            flex-direction: column;
-
-            &__header {
-                display: flex;
-                justify-content: space-between;
-                align-items: center;
-            }
-
-            &__content {
-                width: 1023px;
-                padding: 20px;
-                background-color: #f6f6f6;
-                border-radius: 10px;
-                box-sizing: border-box;
-
-                @include mobile {
-                    width: 100%;
-                }
-            }
-        }
-
+    .collapse {
+   
         @include mobile {
-            padding: 0 20px;
+            margin: 15px auto; 
+            width: 100%;
+            padding: 0 30px;
         }
     }
 }
