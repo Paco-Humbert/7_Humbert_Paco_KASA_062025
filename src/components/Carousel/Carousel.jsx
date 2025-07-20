@@ -7,11 +7,8 @@ import ArrowRight from '../../assets/arrow_right.png'
 import './_Carousel.scss'
 
 function Carousel() {
-    // Récupération de l'ID de la location avec le hook useParams de React Router
     const { id } = useParams()
     const location = DataLogements.find((location) => location.id === id)
-
-    // Utilisation du state local pour afficher la première image
     const [slide, setSlide] = useState(0)
 
     // Création des fonctions permettant de faire défiler les images récupérées

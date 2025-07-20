@@ -1,7 +1,9 @@
 import js from '@eslint/js'
 import globals from 'globals'
-import reactHooks from 'eslint-plugin-react-hooks'
-import reactRefresh from 'eslint-plugin-react-refresh'
+
+// Plugins ajoutés pour gérer les règles React spécifiques
+import reactHooks from 'eslint-plugin-react-hooks'  // Vérifie les règles des Hooks React
+import reactRefresh from 'eslint-plugin-react-refresh'  // Empêche les erreurs avec le hot reload
 
 export default [
   { ignores: ['dist'] },

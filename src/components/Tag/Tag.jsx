@@ -4,7 +4,6 @@ import DataLogements from '../../datas/logements.json'
 import './_Tag.scss'
 
 function Tag() {
-    // Récupération de l'ID de la location avec le hook useParams de React Router
     const { id } = useParams()
     const location = DataLogements.find((location) => location.id === id)
 
