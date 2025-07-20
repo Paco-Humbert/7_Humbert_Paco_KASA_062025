@@ -38,20 +38,20 @@ function Logement() {
                     </div>
                 </section>
                 <section className='logementscard__collapse'>
-                        < Collapse 
-                            title='Description'
-                            content={location.description}
-                        />
-                        < Collapse
-                            title='Équipements'
-                            content= {
-                                <ul>
-                                    {location.equipments.map((equipments, index) => (
-                                        <li key={index}>{equipments}</li>       
-                                    ))}
-                                </ul>
-                                } 
-                        />
+                    < Collapse 
+                        title='Description'
+                        content={location.description}
+                    />
+                    < Collapse
+                        title='Équipements'
+                        content= {
+                            <ul>
+                                {location.equipments.map((equipments, index) => (
+                                    <li key={index}>{equipments}</li>       
+                                ))}
+                            </ul>
+                        } 
+                    />
                 </section>
             </main>
 
